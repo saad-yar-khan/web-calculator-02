@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+</head>
+<link rel="stylesheet" type="text/css" href="calstyle.css">
+<center class="calculator">
+<body>
+<center class="background">
+<br><input type="" class="screen2" placeholder ="|||||||||||||||||||||||||||" name=""></span>
+  <br><br>
+<input type="text" placeholder="00000000000000000 " class="screen" name="input_box">
+  <br><br>
+
+
+<input onclick="ButtonClick('AC')" class="btnON" type="button" name="buttonAC" value="AC">
+<input onclick= "ButtonClick('M+')" class="btnf2" type="button" name="buttonM+" value="M+">
+
+<input onclick= "ButtonClick('M-')" class="btnf2" type="button" name="buttonM-" value="M-">
+
+
+<input onclick= "ButtonClick('Correct')" class="btnf2" type="button" name="buttoncorrect" value="correct">
+
+<input onclick="ButtonClick('OFF')" class="btnON" type="button" name="buttonOFF" value="OFF">
+
+<br><br>
+
+<input onclick= "ButtonClick(7)" class="mybutton" type="button" name="button7" value="7">
+
+<input onclick="ButtonClick(8)" class="mybutton" type="button" name="button8"  value="8">
+
+<input onclick="ButtonClick(9)" class="mybutton" type="button" name="button9" value="9">
+
+<input onclick="ButtonClick('x')" class="btnf3" type="button" name="mybutton" value="x">
+
+<input onclick="ButtonClick('C')" class="btnf3" type="button" name="buttonC" value="C">
+<br>
+<input onclick="ButtonClick(4)" class="mybutton" type="button" name="button4" value="4">
+
+<input onclick="ButtonClick(5)" class="mybutton" type="button" name="button5" value="5">
+
+<input onclick="ButtonClick(6)" class="mybutton" type="button" name="button6" value="6">
+
+<input onclick="ButtonClick('/')" class="btnf3" type="button" name="button/" value="/">
+<input onclick="ButtonClick('%')" class="btnf3" type="button" name="button%" value="%">
+
+
+<br>
+
+<input onclick="ButtonClick(1)" class="mybutton" type="button" name="button1" value="1">
+
+<input onclick="ButtonClick(2)" class="mybutton" type="button" name="button2" value="2">
+
+<input onclick="ButtonClick(3)" class="mybutton" type="button" name="button3" value="3">
+<input onclick="ButtonClick(0)" class="btnf3" type="button" name="button0" value="0">
+
+<input onclick="ButtonClick('00')" class="btnf3" type="button" name="button00" value="00">
+<br>
+
+
+
+<input onclick="ButtonClick('000')" class="btnf1" type="button" name="button000" value="000">
+<input onclick="ButtonClick('+')" class="btnf1" type="button" name="button+" value="+">
+
+<input onclick="ButtonClick('-')" class="btnf1" type="button" name="button-" value="-">
+
+<input onclick="ButtonClick('=')" class="btnf1" type="button" name="button=" value="=">
+
+<input onclick="ButtonClick('.')" class="btnf1" type="button" name=button"." value=".">
+
+
+</center>
+</body>
+
+</center>
+
+
+<script type="text/javascript">
+
+Num1 = 0;
+Result = 0;
+Operator = "";	
+isDotUsed = false;
+
+function ButtonClick(x){
+    var screen = document.querySelector('.screen');
+
+    if(x == '='){
+      if(Operator != ""){
+        if(Operator == '+'){
+          Result = +screen.value + +Num1;
+          screen.value = Result;
+        }else if(Operator == '-'){
+          Result = +Num1 - +screen.value;
+          screen.value = Result;
+        }else if(Operator == 'x'){
+          Result = +Num1 * +screen.value;
+          screen.value = Result;
+        }else if(Operator == '/'){
+          Result = +Num1 / +screen.value;
+          screen.value = Result;
+        }
+      }
+    }else if(x == '/'){
+      Num1 = screen.value;
+      Operator = "/";
+      screen.value = "";
+    }else if(x == 'x'){
+      Num1 = screen.value;
+      Operator = "x";
+      screen.value = "";
+    }else if(x == '-'){
+      Num1 = screen.value;
+      Operator = "-";
+      screen.value = "";
+    }else if(x == '+'){
+      Num1 = screen.value;
+      Operator = "+";
+      screen.value = "";
+    }else if(x == 'C'){
+      screen.value = "";
+      Num1 = 0;
+      Result = 0;
+      Operator = "";  
+      isDotUsed = false;
+    }else if(x == '00'){
+      screen.value = screen.value + '00';
+    }else if(x == "."){
+       if(!isDotUsed){
+            screen.value = screen.value + x;
+            isDotUsed = true;
+       }
+    }else{
+       screen.value = screen.value + x; 
+    }    
+}
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,118 @@
+.screen2{
+  border-radius: 10px;
+  height: 30px;
+  width: 150px;
+  background-color: #828282d1;
+  border-color: black;
+  font-size: 30px;
+ font color: yellow;
+
+}
+
+
+
+
+.screen{
+  height: 40px;
+  width: 246px;
+  border-color:black; 
+  background-color:rgb(211,211,211);
+  font-size: 25px; 
+  color: black;
+  border-left-width:4px;
+  border-right-width:4px;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-color:#2d3e2d; 
+  border-radius: 10px;
+}
+
+.background{
+  background-color:#141415;
+ border-top-right-radius:60px;
+ border-top-left-radius:60px;
+ border-bottom-right-radius: 30px;
+ border-bottom-left-radius: 30px;  
+height: 430px;
+width: 350px;
+border-width: 40px;  
+  
+}
+
+.calculator{
+  background: linear-gradient(to right, black, white);
+  height: 800px;
+}
+
+
+
+
+
+.btnf1{   height: 50px;
+          width: 55px;
+          background-color: #383535;
+          color:white;
+          font-size: 20px;
+          border-right-width: 5px;
+          border-left-width: 5px;
+          border-top-width: 5px;
+          border-bottom-width: 5px;
+          border-bottom-right-radius: 15px;
+          border-bottom-left-radius: 15px;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px; 
+    
+
+}
+
+.btnf2{
+    border-radius:20px;
+    font-variant-caps: all-petite-caps; 
+    background-color:#a8aac1;
+    color:white;
+}
+.btnf3{
+
+height: 50px;
+width: 55px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius:10px; 
+background-color: #333338;
+color:white;
+border-right-width: 5px;
+border-left-width: 5px;
+ border-top-width: 5px;
+border-bottom-width: 5px;
+font-size: 15px;
+}
+.btnON{
+  height: 40px;
+  width: 50px;
+  background-color: #13ada699;
+  border-top-right-radius:10px; 
+  border-top-left-radius:10px;
+  border-bottom-right-radius:15px;
+ border-bottom-left-radius:15px;
+ 
+
+}
+
+
+.mybutton{height: 50px;
+          width: 55px;
+          background-color: #737272;
+          color:white;
+          font-size: 20px;
+          border-right-width: 5px;
+          border-left-width: 5px;
+          border-top-width: 5px;
+          border-bottom-width: 5px;
+          border-bottom-right-radius: 15px;
+          border-bottom-left-radius: 15px;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px; 
+
+}
+
